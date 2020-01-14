@@ -46,35 +46,59 @@ div.container div.content header {
     background-color: blue;
     width: 300px;
     height: 100%;
-    padding: 10px
-}
-
-div.container div.content header div img {
-    width: 35px;
-    height: 30px;
+    padding: 10px 15px;
+    flex:1 ;
 }
 
 div.container div.content header div ul {
     display: flex;
+    flex-direction: column;
+    flex:1 ;
 }
 
 div.container div.content header div ul li div {
     display: flex;
-    justify-content: center;
     flex: 1;
     width: 280px;
+    justify-content: flex-start;
+    padding: 0 15%;
 }
+
+div.container div.content header div ul li:not(:first-child) {
+    margin-top: 30px;
+}
+
 
 div.container div.content header div ul li div a img {
     width: 30px;
     height: 25px;
-    margin-right: 15px;
+    margin-right: 10px;
+    
 }
 
 div.container div.content header div ul li div p {
     font-size: 20px;
     font-weight: bold;
-    margin-right: 15px;
+    margin-left: 10px;
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+div.container div.content header div button {
+    border: 0;
+    background: #1da1f2;
+    color: #fff;
+    width: 190px;
+    height: 44px;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 div.container div.content div.timeline {
